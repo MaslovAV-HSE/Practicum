@@ -1,5 +1,5 @@
 # Ссылки
-<a href="" target="_blank">Figma</a>
+<a href="" target="_blank">Figma</a><br>
 <a href="" target="_blank">Netlify</a>
 
 # Описание
@@ -7,9 +7,9 @@
 
 # Спринт 1
 
-Сверстаны страницы приложения с использованием <b>Handlerbars</b>
-Проект разбит на модули
-Настроена выгрузка на netlify
+Сверстаны страницы приложения с использованием <b>Handlerbars</b><br>
+Проект разбит на модули<br>
+Настроена выгрузка на <b>Netlify</b>
 
 # Запуск приложения
 npm run build
