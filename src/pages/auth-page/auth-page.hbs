@@ -1,0 +1,21 @@
+{{#> Dialog }}
+  <form class="auth-page">
+    <div class="auth-page__content">
+      {{> PageTitle title="Регистрация" }}
+      {{> InputField className="auth-page__input" title="Почта" name="email" }}
+      {{> InputField className="auth-page__input" title="Логин" name="login" }}
+      {{> InputField className="auth-page__input" title="Имя" name="firstname" }}
+      {{> InputField className="auth-page__input" title="Фамилия" name="lastname" }}
+      {{> InputField className="auth-page__input" title="Телефон" name="phonenumber" }}
+      {{> InputField className="auth-page__input" title="Пароль" name="password" type="password" }}
+      {{> InputField className="auth-page__input" title="Пароль (еще раз)" name="passwordrepeat" type="password" }}
+    </div>
+    <div class="auth-page__footer">
+      {{> Button text="Зарегестрироваться" page="Profile" }}
+      {{> Button text="Ошибка 404" page="Profile" }}
+      {{> Button text="Зарегестрироваться" page="Profile" }}
+      {{> Link text="Войти" page="LoginPage" }}
+    </div>
+  </form>
+{{/ Dialog }}
+
