@@ -1,0 +1,35 @@
+{{#> Dialog}}
+    <div class="profile-page">
+        <div class="profile-page__avatar">{{> Avatar photo=''}}</div>
+        <div class="profile-page__content">
+            <div class="profile-page__content-field">
+                <div class="profile-page__content-field-name">Имя</div>
+                <div class="profile-page__content-field-value"></div>
+            </div>
+            <div class="profile-page__content-field">
+                <div class="profile-page__content-field-name">Фамилия</div>
+                <div class="profile-page__content-field-value"></div>
+            </div>
+            <div class="profile-page__content-field">
+                <div class="profile-page__content-field-name">Логин</div>
+                <div class="profile-page__content-field-value"></div>
+            </div>
+            <div class="profile-page__content-field">
+                <div class="profile-page__content-field-name">Email</div>
+                <div class="profile-page__content-field-value"></div>
+            </div>
+            <div class="profile-page__content-field">
+                <div class="profile-page__content-field-name">Пароль</div>
+                <div class="profile-page__content-field-value"></div>
+            </div>
+            <div class="profile-page__content-field">
+                <div class="profile-page__content-field-name">Телефон</div>
+                <div class="profile-page__content-field-value"></div>
+            </div>
+        </div>
+        <div class='profile-page__footer'>
+            {{> Link href='/edit-profile' text='Изменить данные'}}
+            {{> Link href='/chat' text='Вернуться к чатам'}}
+        </div>
+    </div>
+{{/ Dialog}}

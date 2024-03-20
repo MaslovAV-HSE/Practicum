@@ -1,26 +1,20 @@
 @import '../../assets/variables';
 
 .not-found-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-  &__content {
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -125px 0 0 -125px;
+ 
+  &__content {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   &__text {
-    size: 24px;
+    font-size: 24px;
     font-weight: 700;
   }
 
   &__code {
-    size: 50px;
+    font-size: 50px;
   }
 }

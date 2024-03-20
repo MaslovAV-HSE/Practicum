@@ -6,10 +6,13 @@ const pages = {
   'chat': [ Pages.ChatPage ],
   'login': [ Pages.LoginPage ],
   'singup': [Pages.SingUpPage],
-  'error': [Pages.ErrorPage],
-  'notfound': [Pages.NotFoundPage],
-  'profile': [Pages.ProfilePage]
+  '500': [Pages.ErrorPage],
+  '404': [Pages.NotFoundPage],
+  'profile': [Pages.ProfilePage],
+  'editprofile': [Pages.EditProfile],
+  'editpassword': [Pages.EditPassword]
 };
+
 
 Object.entries(Components).forEach(([ name, component ]) => {
   Handlebars.registerPartial(name, component);
@@ -22,43 +25,14 @@ function navigate(page) {
 }
 
 document.addEventListener('DOMContentLoaded', (e) => {
-  const path = e.target.location.pathname;
-
-  switch (path) {
-    case '/login': {
-      navigate('login');
-      break;
-    }
-    case '/singup': {
-      navigate('singup');
-      break;
-    }
-    case '/profile': {
-      navigate('profile');
-      break;
-    }
-    // case '/edit-profile': {
-    //   navigate('editProfilePage');
-    //   break;
-    // }
-    // case '/edit-password': {
-    //   navigate('editPasswordPage');
-    //   break;
-    // }
-    case '/404': {
-      navigate('notfound');
-      break;
-    }
-    case '/500': {
-      navigate('error');
-      break;
-    }
-
-    default: {
-      window.location.pathname = '/login';
-    }
+  const path = e.target.location.pathname.slice(1);
+  
+  if (Object.keys(pages).includes(path)) {
+    navigate(path);
   }
-
+  else {
+    window.location.pathname = '/login';
+  };
 });
 
 
