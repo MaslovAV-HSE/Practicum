@@ -1,0 +1,19 @@
+{{#> Dialog }}
+  <form class="sign-up-page">
+    <div class="sign-up-page__content">
+      {{> PageTitle title="Регистрация" }}
+      {{> InputField className="sign-up-page__input" title="Почта" name="email" }}
+      {{> InputField className="sign-up-page__input" title="Логин" name="login" }}
+      {{> InputField className="sign-up-page__input" title="Имя" name="firstname" }}
+      {{> InputField className="sign-up-page__input" title="Фамилия" name="lastname" }}
+      {{> InputField className="sign-up-page__input" title="Телефон" name="phonenumber" }}
+      {{> InputField className="sign-up-page__input" title="Пароль" name="password" type="password" }}
+      {{> InputField className="sign-up-page__input" title="Пароль (еще раз)" name="passwordrepeat" type="password" }}
+    </div>
+    <div class="sign-up-page__footer">
+      {{> Button text="Зарегестрироваться" page="ProfilePage" }}
+      {{> Link text="Войти" page="LoginPage" }}
+    </div>
+  </form>
+{{/ Dialog }}
+
