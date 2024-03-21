@@ -9,6 +9,10 @@
     box-sizing: border-box;
     font: inherit;
 
+    &:focus{
+      text-decoration: underline;
+    }
+
     &--align-right {
       text-align: right;
     }

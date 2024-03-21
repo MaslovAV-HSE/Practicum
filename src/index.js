@@ -15,6 +15,7 @@ const pages = {
 
 
 Object.entries(Components).forEach(([ name, component ]) => {
+  console.log(Object.entries(Components))
   Handlebars.registerPartial(name, component);
 });
 

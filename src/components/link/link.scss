@@ -15,4 +15,8 @@
   &:hover {
     text-decoration: underline;
   }
+
+  &.--align-left {
+    text-align: left;
+  }
 }

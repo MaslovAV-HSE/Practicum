@@ -1,0 +1,10 @@
+@import '../../assets/variables';
+
+.profile-field {
+  display: flex;
+  justify-content: space-between;
+  width: 510px;
+  &__value {
+    color: $text-light-color;
+  }
+}
