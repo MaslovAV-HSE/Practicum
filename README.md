@@ -35,3 +35,12 @@ npm run build
 * Handlebars
 * Express
 * Netlify
+
+# Страницы
+- http://localhost:3000/login - страница входа
+- http://localhost:3000/singup - страница регистрации
+- http://localhost:3000/pfofile - страница профиля
+- http://localhost:3000/editprofile - страница редактирования профиля
+- http://localhost:3000/editpassword - страница редактирования пароля
+- http://localhost:3000/404 - страница не найдено
+- http://localhost:3000/500 - страница ошибки
