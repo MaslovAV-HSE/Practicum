@@ -1,0 +1,23 @@
+@import '../../assets/variables';
+
+.profile-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: .5px solid currentColor;
+  border-bottom-color: $divider-line-color;
+
+
+  &__value {  
+    color: $text-light-color;
+
+    
+    &--edit {
+      color: $text-light-color;
+      border: none;
+      text-align: right;
+    }
+  }
+}

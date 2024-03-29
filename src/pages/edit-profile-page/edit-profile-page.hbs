@@ -1,0 +1,15 @@
+{{> ButtonBack page='chat'}}
+<div class="profile-page">
+    <div class="profile-page__avatar">{{> Avatar photo=''}}</div>
+    <div class="profile-page__content">
+        {{> ProfileField title='Почта' edit='pochta@yandex.ru' }}
+        {{> ProfileField title='Логин' edit='ivanovi' }}
+        {{> ProfileField title='Имя' edit='Иван' }}
+        {{> ProfileField title='Фамилия' edit='Иванов' }}
+        {{> ProfileField title='Имя в чате' edit='Иван' }}
+        {{> ProfileField title='Телефон' edit='+7 (909) 967 30 30' }}
+    </div>
+    <div class='profile-page__footer--align-center'>
+        {{> Button text="Сохранить" page="editprofile"}}
+    </div>
+</div>

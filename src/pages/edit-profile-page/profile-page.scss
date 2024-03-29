@@ -1,0 +1,27 @@
+.profile-page {
+  width: 510px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0px solid currentColor;
+  
+  &__avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    :last-child{
+      border-bottom: 0px solid currentColor;
+    }
+  }
+  &__footer {
+    width: 280px;
+    margin-top: 50px;
+    &--align-center{
+      align-items: center;
+      width: 280px;
+      margin-top: 50px;
+    }
+  }
+}
