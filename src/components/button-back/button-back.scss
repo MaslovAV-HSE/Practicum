@@ -1,0 +1,20 @@
+@import '../../assets/variables';
+
+.button-back {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 64px;
+  background-color: $button-back-bgcolr;
+  box-shadow: 2px 5px $button-back-shadow;
+  border: none;
+
+  &__circle {
+    margin-left: 10px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url(../../assets/BackBTN.png);
+  }
+}

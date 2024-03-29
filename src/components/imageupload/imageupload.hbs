@@ -1,0 +1,12 @@
+<dialog class="imageupload">
+  <h1 class="imageupload__title">{{ title }}</h1>
+  {{#if filename}}
+  <label class="filename">{{ filename }}</label>
+  {{#else}}
+  {{Link text='Выбрать файл на компьюторе'}}
+  {{#/if}}
+  {{> Button page='profilepage' text='Поменять'}}
+  {{#if error}}
+  <label class="imageupload__error">Нужно выбрать файл</label>
+  {{#/if}}
+</dialog>

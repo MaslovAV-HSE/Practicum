@@ -1,0 +1,25 @@
+@import '../../assets/variables';
+
+.imageupload {
+  margin: auto;
+	position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: $dialog-bgcolor;
+  box-shadow: $dialog-shadow;
+  border-radius: 12px;
+  width: 340px;
+  height: 257px;
+
+  &__title {
+    color: $text-color;
+    font-size: $font-weight-regular;
+  }
+
+  &__filename {
+    color: $text-light-color;
+  }
+
+  &__error{
+    color: $text-red;
+  }
+}

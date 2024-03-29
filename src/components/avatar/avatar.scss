@@ -1,0 +1,39 @@
+@import '../../assets/variables';
+
+.avatar {
+  
+  p {
+    position: relative;
+    z-index: 1000;
+    visibility: hidden;
+    color: white;
+    width: 64px;
+  }
+
+  grid-area: a;
+    background: $gray-light-color;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+
+  &__image {
+    position: relative;
+    top: 45px;
+    left: 45px;
+    width: 40px;
+    height: 40px;
+  }
+  &__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+  &:hover{ 
+    background-color: rgba(0, 0, 1, 0.3); /* Фон блока при наведении */
+    p {
+      visibility: visible;
+    }
+  }
+}

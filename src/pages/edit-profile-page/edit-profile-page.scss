@@ -1,0 +1,26 @@
+.editprofile-page {
+  width: 510px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0px solid currentColor;
+  
+  &__avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    :last-child{
+      border-bottom: 0px solid currentColor;
+    }
+  }
+  &__footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    &--button{  
+      width: 280px;
+    }
+  }
+}
