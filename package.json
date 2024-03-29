@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Middle-Frontend Chat",
   "license": "ISC",
-  "engines": {
-    "node": ">=12"
-  },
+  "type": "module",
   "workspaces": [
     "packages/*"
   ],
@@ -15,12 +13,22 @@
     }
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node server.js",
+    "build": "vite build",
+    "preview": "vite preview",
     "dev": "vite --port 3000 --host"
   },
   "devDependencies": {
-    "handlebars": "^4.7.8",
+    "express": "^4.18.2",
     "sass": "^1.71.1",
-    "vite": "^5.1.4"
+    "vite": "^5.1.4",
+    "vite-plugin-handlebars": "^2.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.71.1",
+    "handlebars": "^4.7.8"
+  },
+  "engines": {
+    "node": "16.20.0"
   }
 }
