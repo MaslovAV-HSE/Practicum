@@ -18,5 +18,9 @@
 
   &.--align-left {
     text-align: left;
+    &--exit {
+      text-align: left;
+      color: $linl-exit-color;
+    }
   }
 }

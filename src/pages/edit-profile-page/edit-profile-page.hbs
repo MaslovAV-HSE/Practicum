@@ -1,35 +1,15 @@
-{{#> Dialog}}
-    <div class="profile-page">
-        <div class="profile-page__avatar">{{> Avatar photo=''}}</div>
-        <div class="profile-page__content">
-            <div class="profile-page__content-field">
-                <div class="profile-page__content-field-name">Имя</div>
-                <div class="profile-page__content-field-value"></div>
-            </div>
-            <div class="profile-page__content-field">
-                <div class="profile-page__content-field-name">Фамилия</div>
-                <div class="profile-page__content-field-value"></div>
-            </div>
-            <div class="profile-page__content-field">
-                <div class="profile-page__content-field-name">Логин</div>
-                <div class="profile-page__content-field-value"></div>
-            </div>
-            <div class="profile-page__content-field">
-                <div class="profile-page__content-field-name">Email</div>
-                <div class="profile-page__content-field-value"></div>
-            </div>
-            <div class="profile-page__content-field">
-                <div class="profile-page__content-field-name">Пароль</div>
-                <div class="profile-page__content-field-value"></div>
-            </div>
-            <div class="profile-page__content-field">
-                <div class="profile-page__content-field-name">Телефон</div>
-                <div class="profile-page__content-field-value"></div>
-            </div>
-        </div>
-        <div class='profile-page__footer'>
-            {{> Link href='/edit-profile' text='Изменить данные'}}
-            {{> Link href='/chat' text='Вернуться к чатам'}}
-        </div>
+{{> ButtonBack page='chat'}}
+<div class="profile-page">
+    <div class="profile-page__avatar">{{> Avatar photo=''}}</div>
+    <div class="profile-page__content">
+        {{> ProfileField title='Почта' edit='pochta@yandex.ru' }}
+        {{> ProfileField title='Логин' edit='ivanovi' }}
+        {{> ProfileField title='Имя' edit='Иван' }}
+        {{> ProfileField title='Фамилия' edit='Иванов' }}
+        {{> ProfileField title='Имя в чате' edit='Иван' }}
+        {{> ProfileField title='Телефон' edit='+7 (909) 967 30 30' }}
     </div>
-{{/ Dialog}}
+    <div class='profile-page__footer--align-center'>
+        {{> Button text="Сохранить" page="editprofile"}}
+    </div>
+</div>

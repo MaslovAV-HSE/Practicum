@@ -45,4 +45,8 @@ document.addEventListener('click', e => {
     e.preventDefault();
     e.stopImmediatePropagation();
   }
+  const dialog = e.target.getAttribute('dialog');
+  if (dialog) {
+
+  }
 });
